@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilunga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="defaulting()">
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="img/logo/logo.svg" alt="">
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#team">Equipa</a></li>
+                <li><a href="#contact">Contatos</a></li>
+                <li><a href="#service" class="btn">Vamos Começar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="home" id="home">
+            <div class="bg">
+                <div class="img-container">
+                    <img src="img/BG/pexels-kelly-2382665.jpg" alt="">
+                </div>
+            </div>
+            <div class="layer">
+                <h1 class="hidden">Potencialize sua Colheita com a Kilunga</h1>
+                <div class="btn-container">
+                    <a href="#about" class="btn hidden">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="bg">
+                <div class="img-container">
+                    <img src="img/BG/pexels-jonathan-borba-15672380.jpg" alt="">
+                </div>
+            </div>
+            <div class="layer hidden">
+                <div class="content">
+
+                    <div class="text-container hidden">
+                        <div class="text-box about-us">
+                            <h1>Quem Somos?</h1>
+                            <p>
+                                Somos a Kilunga, uma startup agritech comprometida em transformar a agricultura familiar
+                                por
+                                meio de tecnologia e
+                                inovação.
+                                Nossa missão é capacitar agricultores familiares a produzirem no seu pleno potencial,
+                                tornando a agricultura sustentável
+                                e reduzindo custos.
+                                Navegue pelas nossas funcionalidades e descubra como estamos revolucionando o campo com
+                                dados via satélite e
+                                inteligência artificial.
+                            </p>
+                        </div>
+                        <div class="text-box mission">
+                            <h1>Nossa missão</h1>
+                            <p>
+                                Nossa missão é capacitar os agricultores angolanos por meio de tecnologias inovadoras
+                                que
+                                aumentam
+                                a produtividade, reduzem o desperdício, promovem a segurança alimentar e o impacto
+                                ambiental.
+                            </p>
+                        </div>
+                        <div class="text-box vision">
+                            <h1>Nossa visão</h1>
+                            <p>
+                                Nossa visão é ser uma referência em soluções agrícolas tecnológicas em Angola,
+                                transformando a agricultura do país em um
+                                motor de crescimento econômico sustentável, melhorando a vida de milhões de agricultores
+                                e consequentemente melhorar a
+                                vida dos angolanos .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="img1 hidden" src="img/Action/WhatsApp Image 2023-08-18 at 11.09.55 AM.jpeg" alt="">
+                        <img class="img2 hidden" src="img/Action/WhatsApp Image 2023-08-18 at 11.10.03 AM.jpeg" alt="">
+                        <img class="img3 hidden" src="img/Action/WhatsApp Image 2023-08-18 at 11.10.07 AM.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="bg">
+                <div class="img-container">
+                    <img src="img/BG/pexels-fabien-burgue-2317717.jpg" alt="">
+                </div>
+            </div>
+            <div class="layer hidden">
+                <div class="boxes-layout">
+                    <h2>Conheça os nossos serviços</h2>
+
+                    <div class="services-container">
+                        <div class="service-box hidden" id="farmer">
+                            <div class="icon-container">
+                                <img src="img/icons/tractor-solid.svg" alt="">
+                            </div>
+                            <div class="service-plan">
+                                <span class="btn_bg" id="btn_bg_farmer"></span>
+                                <button class="selected" id="farmer-month">Mensal</button>
+                                <button id="farmer-year"> Anual</button>
+                            </div>
+                            <div class="service-description">
+                                <ul>
+                                    <li>Monitoramento remoto via satélite das terras, plantas, clima, pragas</li>
+                                    <li>Gerenciamento de insumos</li>
+                                    <li>Analise de problema na plantação</li>
+                                    <li>Inteligência Artificial para ajudar na tomada de decisão</li>
+                                    <li>Transporte de mercadoria</li>
+                                    <li>Gerenciamento de stock</li>
+                                    <li>Gestão financeira da fazenda</li>
+                                </ul>
+                            </div>
+                            <div class="service-price hidden">
+                                <p><span id="farmer-price">11.000</span> AOA</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegAJq2o1g9N94NvpDzZTI2yBQU8eJAZ9RA63bhK4hNTRB0Ig/viewform?usp=sf_link"
+                                    class="service-btn">Obter</a>
+                            </div>
+                        </div>
+                        <div class="service-box hidden" id="financial">
+                            <div class="icon-container">
+                                <img src="img/icons/building-solid.svg" alt="">
+                            </div>
+                            <div class="service-plan">
+                                <span class="btn_bg" id="btn_bg_financial"></span>
+                                <button class="selected" id="financial-month">Mensal</button>
+                                <button id="financial-year">Anual</button>
+                            </div>
+                            <div class="service-description">
+                                <p>
+                                    Este vão poder entrar para poderem receber dados de crescimento de uma fazenda
+                                    ou de um empreendedor ou empresa para poderem avaliar o perfil financeiro e tomarem
+                                    decisões se a
+                                    mesma merece financiamento ou não
+                                </p>
+                            </div>
+                            <div class="service-price hidden">
+                                <p><span id="financial-price">11.000</span> AOA</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSgSqvFEQFPfqTdDxLmcgAUIlgmAfAMOC6-o4OOe5zJ3hXww/viewform?usp=sf_link"
+                                    class="service-btn">Obter</a>
+                            </div>
+                        </div>
+                        <div class="service-box hidden" id="businessman">
+                            <div class="icon-container">
+                                <img src="img/icons/user-tie-solid.svg" alt="">
+                            </div>
+                            <div class="service-plan">
+                                <span class="btn_bg" id="btn_bg_business"></span>
+                                <button class="selected" id="business-month">Mensal</button>
+                                <button id="business-year">Anual</button>
+                            </div>
+                            <div class="service-description">
+                                <p>
+                                    estes aqui vão poder entrar na plataforma para poderem receber dados
+                                    de demanda no mercado agrícola e o local da demanda. Para poderem fazer um bom
+                                    estudo de
+                                    viabilidade.
+                                </p>
+                            </div>
+                            <div class="service-price hidden">
+                                <p><span id="business-price">11.000</span> AOA</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfno4ueuimaxWFdl9WyARS7rol0hB6Ma-8My6t22yNfosxRJg/viewform?usp=sf_link"
+                                    class="service-btn">Obter</a>
+                            </div>
+                        </div>
+                        <div class="service-box hidden" id="trucker">
+                            <div class="icon-container">
+                                <img src="img/icons/truck-solid.svg" alt="">
+                            </div>
+                            <div class="service-plan">
+                                <span class="btn_bg" id="btn_bg_truck"></span>
+                                <button class="selected" id="truck-month">Mensal</button>
+                                <button id="truck-year">Anual</button>
+                            </div>
+                            <div class="service-description">
+                                <p>
+                                    Escoadores podem se cadastrar na plataforma para escoarem Produtos das fazendas
+                                    podendo
+                                    ganhar por
+                                    cada transporte
+                                </p>
+                            </div>
+                            <div class="service-price hidden ocult">
+                                <p><span id="truck-price">11.000</span> AOA</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAh9lNVnYfHZcdcj_K8sXeycuY45Tq4G128P6-Srccb6zB5Q/viewform?usp=sf_link"
+                                    class="service-btn">Obter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="bg">
+                <div class="img-container">
+                    <img src="img/BG/pexels-tomas-anunziata-3876417.jpg" alt="">
+                </div>
+            </div>
+            <div class="layer hidden">
+                <div class="boxes-layout">
+                    <h2>Conheça a nossa Equipa</h2>
+
+                    <div class="team-container">
+                        <div class="members-box hidden">
+                            <div class="members-img">
+                                <img src="img/Team/WhatsApp Image 2023-08-24 at 4.43.33 PM.jpeg" alt="John N'vula"
+                                    id="john">
+                            </div>
+                            <div class="members-description">
+                                <h2 class="name">João N'vula</h2>
+                                <ul class="attributes">
+                                    <li>Electrotechnical Engineer Student</li>
+                                    <li>Founder</li>
+                                </ul>
+                            </div>
+                            <div class="members-btn">
+                                <button class="member-btn">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="members-box hidden">
+                            <div class="members-img">
+                                <img src="img/Team/161299052_871545590363127_6562972101926574754_n.jpg"
+                                    alt="Ivandro Neto" id="ivandro">
+                            </div>
+                            <div class="members-description">
+                                <h2 class="name">Ivandro Neto</h2>
+                                <ul class="attributes">
+                                    <li>Computer Scientist student</li>
+                                    <li>Co-fouder</li>
+                                </ul>
+                            </div>
+                            <div class="members-btn">
+                                <button class="member-btn">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="members-box hidden">
+                            <div class="members-img">
+                                <img src="img/Team/WhatsApp Image 2023-08-24 at 4.44.56 PM.jpeg" alt="Jorge Sahanda"
+                                    id="jorge">
+                            </div>
+                            <div class="members-description">
+                                <h2 class="name">Jorge Sahanda</h2>
+                                <ul class="attributes">
+                                    <li>Marketer
+                                        Director</li>
+                                    <li>Farmer</li>
+                                    <li>Co-fouder</li>
+                                </ul>
+                            </div>
+                            <div class="members-btn">
+                                <button class="member-btn">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="members-box hidden">
+                            <div class="members-img">
+                                <img src="img/Team/WhatsApp Image 2023-08-24 at 4.43.00 PM.jpeg" alt="Avelino Carlito"
+                                    id="avelino">
+                            </div>
+                            <div class="members-description">
+                                <h2 class="name">Avelino Carlito</h2>
+                                <ul class="attributes">
+                                    <li>UX and UI
+                                        designer</li>
+                                    <li>Co-fouder</li>
+                                </ul>
+                            </div>
+                            <div class="members-btn">
+                                <button class="member-btn">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="members-box hidden">
+                            <div class="members-img">
+                                <img src="img/Team/WhatsApp Image 2023-08-24 at 4.43.01 PM.jpeg" alt="Hamilton Mucanda"
+                                    id="hamilton">
+                            </div>
+                            <div class="members-description">
+                                <h2 class="name">Hamilton Mucanda</h2>
+                                <ul class="attributes">
+                                    <li>Economist</li>
+                                    <li>Co-fouder</li>
+                                </ul>
+                            </div>
+                            <div class="members-btn">
+                                <button class="member-btn">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="bg">
+                <div class="img-container">
+                    <img src="img/BG/pexels-tetyana-kovyrina-1600139.jpg" alt="">
+                </div>
+            </div>
+            <div class="layer hidden">
+                <div class="contact-container">
+                    <div class="contact-form hidden">
+                        <h2>Deixe-nos uma mensagem e entraremos em contato o mais rápido possível</h2>
+                        <form action="php/sendEmail.php" method="post">
+                            <div class="contact-input">
+                                <input type="text" placeholder="Nome">
+                            </div>
+                            <div class="contact-input">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="contact-input">
+                                <input type="text" placeholder="Assunto">
+                            </div>
+                            <div class="contact-content">
+                                <textarea name="" id="" cols="30" rows="10">
+                                </textarea>
+                            </div>
+                            <div class="form-button-container">
+                                <button class="service-btn" type="submit">Enviar Messagem</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="others-contact hidden">
+                        <h2>Você também pode nos alcançar em:</h2>
+                        <p>E-mail: geral@kilunga.net</p>
+                        <p>Telefone: (+244) 928-368-753</p>
+                        <a href="https://calendly.com/joaonvula50" class="btn">Agendar uma Reunião</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">&copy;2023 Kilunga - Todos os direitos reservados.</div>
+        </section>
+    </main>
+    <script src="js/service.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

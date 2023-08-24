@@ -1,0 +1,543 @@
+
+:root{
+    /* CSS HEX */
+--baby-powder: #fffffaff;
+--rufous: #9b2915ff;
+--british-racing-green: #24422d;
+--cal-poly-green: #2e5339ff;
+--dark-moss-green: #40531bff;
+--oxford-blue: #0a122aff;
+
+/* CSS HSL */
+--baby-powder: hsla(60, 100%, 99%, 1);
+--rufous: hsla(9, 76%, 35%, 1);
+--british-racing-green: hsla(138, 29%, 20%, 1);
+--cal-poly-green: hsla(138, 29%, 25%, 1);
+--dark-moss-green: hsla(80, 51%, 22%, 1);
+--oxford-blue: hsla(225, 62%, 10%, 1);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    scroll-behavior: smooth;
+    color: var(--baby-powder);
+}
+
+nav{
+    display: fixed;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 32px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0 50px;
+}
+li a{
+    text-decoration: none;
+    color: var(--baby-powder);
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    position: relative;
+}
+.bg{
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+.bg .img-container{
+    position: relative;
+    background-color: var(--british-racing-green);
+    width: 100%;
+    height: 100%;    
+}
+
+.img-container img{
+    width: 100%;
+    opacity: 35%;
+    filter: brightness(50%);
+}
+
+.layer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 10%;
+}
+.home .layer h1{
+    color: var(--baby-powder);
+    font-size: 4rem;
+    z-index: 100;
+}
+
+.home .img-container img{
+    margin-top: -50%;    
+}
+.about .img-container img{
+    width: 130%;
+}
+.service .img-container img{
+    margin-top: -50%;
+}
+.team-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+.contact .img-container img{
+        margin-top: -50%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.btn{
+    text-decoration: none;
+    background-color: var(--baby-powder);
+    padding: 15px 25px;
+    color: var(--british-racing-green);
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 500ms;
+}
+h1{
+    transition-delay: 100ms;
+}
+.btn{
+    transition-delay: filter 500ms;
+}
+.text-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.text-box{
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    width: 60%;
+    line-height: 1.5;
+
+}
+.content{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+    
+}
+.img-box img{
+    position: absolute;
+}
+
+.img1{
+    width: 100%;
+    right: 10%;
+    transition-delay: 1s;
+}
+.img2{
+    width: 90%;
+    right: 100%;
+    top: 40%;
+    transition-delay: 1.3s;
+}
+.img3{
+    width: 100%;
+    right: 10%;
+    top: 60%;
+    transition-delay: 2s;
+}
+
+/* SERVICE CONTAINER STYLE */
+.services-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+}
+
+.service-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(36, 66, 45, .9);
+    width: 355px;
+    height: 550px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.icon-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon-container img{
+    width: 30%;
+}
+
+#financial .icon-container img , #businessman .icon-container img{
+    width: 20%;
+}
+
+.service-plan{
+    position: relative;
+    background-color: var(--baby-powder);
+    width: 65%;
+    height: 45px;
+    display: flex;
+    gap: 32px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.btn_bg{
+    top: 10%;
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    background-color: var(--cal-poly-green);
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 500ms;
+}
+.service-plan button{
+    color: var(--british-racing-green);
+    font-size: 1rem;
+    background-color: transparent;
+    text-decoration: none;
+    z-index: 5;
+    border: none;
+    cursor: pointer;
+}
+.service-description{
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 250px;
+    line-height: 1.5;
+}
+
+.service-description p 
+,
+.service-description li{
+    font-size: .9em;
+}
+
+.service-price{
+    width: 100%;
+    max-height: 80px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.service-btn{
+    text-decoration: none;
+    background-color: var(--baby-powder);
+    padding: 15px 30px;
+    color: var(--british-racing-green);
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.selected{
+    color: var(--baby-powder) !important;
+}
+
+#farmer{
+    transition-delay: 600ms;
+}
+#financial{
+    transition-delay: 800ms;
+}
+#businessman{
+    transition-delay: 1s;
+}
+#trucker{
+    transition-delay: 1.2s;
+}
+
+/* TEAMS */
+.boxes-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    gap: 10px;
+}
+.members-box{
+    width: 300px;
+    height: auto;
+    background-color: rgba(36, 66, 45, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.members-img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--cal-poly-green);
+}
+
+.members-img img{
+    width: 100%;
+}
+.members-img #ivandro{
+    width: 150%;
+}
+.members-img #jorge{
+    margin-top: 130px;
+    width: 200%;
+}
+.members-img #hamilton{
+    width: 220%;
+    margin-left: 70px;
+}
+.members-description{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.members-description h2{
+    width: 100%;
+}
+.members-description ul{
+    list-style: none;
+}
+
+.members-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-btn{
+    border: none;
+    text-decoration: none;
+    background-color: var(--baby-powder);
+    padding: 15px 30px;
+    color: var(--british-racing-green);
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.member-btn:hover, .service-btn:hover, .btn:hover{
+    background-color: var(--dark-moss-green);
+    color: var(--baby-powder);
+}
+
+#farmer .service-price, .members-box:nth-child(1){
+    transition-delay: 600ms;   
+}
+
+#financial .service-price, .members-box:nth-child(2){
+    transition-delay: 800ms;   
+}
+
+#businessman .service-price, .members-box:nth-child(3){
+    transition-delay: 1s;   
+}
+
+#trucker .service-price, .members-box:nth-child(4){
+    transition-delay: 1.2s;   
+}
+
+.members-box:nth-child(5){
+    transition-delay: 1.4s;   
+}
+
+.contact-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contact-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-form form{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--baby-powder);
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-input input,
+.contact-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--oxford-blue);
+  border-radius: 20px;
+  outline: none;
+  background-color: var(--baby-powder);
+  color: var(--british-racing-green); /* Adjust text color */
+}
+
+.contact-input input::placeholder,
+.contact-content textarea::placeholder {
+  color: var(--cal-poly-green); /* Adjust placeholder color */
+}
+
+.contact-content textarea {
+  resize: vertical;
+}
+
+.form-button-container {
+  text-align: center;
+}
+
+.contact .service-btn {
+  background-color: var(--british-racing-green);
+  color: var(--baby-powder);
+  padding: 15px 30px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact .service-btn:hover {
+  background-color: var(--dark-moss-green); /* Hover color */
+}
+
+.others-contact{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.contact{
+    position: relative;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.ocult{visibility: hidden;}
