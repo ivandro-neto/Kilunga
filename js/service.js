@@ -68,3 +68,13 @@ document
 document
   .querySelector("#truck-year")
   .addEventListener("click", () => selectPlan("truck", "year"));
+
+
+function show_nav() {
+  document.getElementById("menu").style.opacity = 1;
+  document.getElementById("menu").style.pointerEvents = "stroke";
+}
+function hide_nav() {
+  document.getElementById("menu").style.opacity = 0;
+  document.getElementById("menu").style.pointerEvents = "none";
+}

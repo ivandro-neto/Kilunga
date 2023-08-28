@@ -7,6 +7,8 @@
     <title>Kilunga</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/862cb3a9f7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body onload="defaulting()">
@@ -15,14 +17,18 @@
             <div class="logo">
                 <img src="img/logo/logo.svg" alt="">
             </div>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#service">Serviços</a></li>
-                <li><a href="#team">Equipa</a></li>
-                <li><a href="#contact">Contatos</a></li>
-                <li><a href="#service" class="btn">Vamos Começar</a></li>
-            </ul>
+            <div class="menu" id="menu">
+                <i class="fa fa-solid fa-xmark" id="fa" style="font-size:1.3em ;" onclick="hide_nav()"></i>
+                <ul class="nav">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#service">Serviços</a></li>
+                    <li><a href="#team">Equipa</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#service" class="btn">Vamos Começar</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" id="fa" style="font-size:1.3em ;" onclick="show_nav()"></i>
         </div>
     </nav>
     <main class="container">

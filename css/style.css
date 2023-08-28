@@ -31,6 +31,10 @@ nav{
     z-index: 5;
     width: 100%;
 }
+#fa{
+    font-size: 22px;
+    display: none;
+}
 .nav-bar{
     display: flex;
     padding: 20px;
@@ -38,14 +42,15 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+.nav{
+    display: flex;
+    gap: 10px;
+    padding: 0 50px;
+    flex-direction: row;
+    list-style: none;
+}
 .logo img{
     width: 32px;
-}
-.nav-bar ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0 50px;
 }
 li a{
     text-decoration: none;
@@ -56,6 +61,7 @@ li a{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: auto;
 }
 
 section{
@@ -65,12 +71,14 @@ section{
     justify-content: center;
     scroll-snap-align: start;
     position: relative;
+    max-width: 100%;
 }
 .bg{
     height: 100vh;
     overflow: hidden;
     position: absolute;
     z-index: 0;
+    width: 100%;
 }
 .bg .img-container{
     position: relative;
@@ -99,7 +107,7 @@ section{
 .home .layer h1{
     color: var(--baby-powder);
     font-size: 4rem;
-    z-index: 100;
+    z-index: 1;
 }
 
 .home .img-container img{
@@ -121,7 +129,7 @@ section{
     gap: 20px;
 }
 .contact .img-container img{
-        margin-top: -50%;
+    margin-top: -50%;
 }
 
 .hidden{
@@ -300,6 +308,7 @@ h1{
     padding: 10px;
     font-size: 2rem;
     font-weight: 800;
+
 }
 
 .btn-container{
@@ -541,3 +550,319 @@ h1{
 }
 
 .ocult{visibility: hidden;}
+
+@media screen and (max-width:1200px){
+     .nav-bar{
+        width: 100%;
+    }
+
+    #fa{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 70vw;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 50px 20px;
+        background-color: var(--cal-poly-green);
+        box-shadow: -150px 0 1px 10000px rgba(0, 0, 0, 0.322);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 500ms;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+        font-size: 1.4em;
+        justify-content: center;
+    }
+    .home .layer h1{
+        color: var(--baby-powder);
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .img-container img{
+        width: 200%;
+    }
+
+    .home .img-container img{
+        margin-top:-100%;    
+    }
+
+    .about .img-container img{
+        width: 250%;
+        margin-left: -120%;
+    }
+
+    .service .img-container img{
+        margin-top: -50%;
+    }
+    .text-container{
+        min-width: 50%;
+    }
+    .about .layer{
+        padding: 0;
+    }
+    .text-box{
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        line-height: 1.5;
+        font-size: .75em;
+    }
+    .img-box{
+        display: flex;
+    }
+
+    .img1{
+        width: 90%;
+        right: 20%;
+        top: 15%;
+        transition-delay: 1s;
+    }
+    .img2{
+        width: 90%;
+        right: 100%;
+        top: 40%;
+        transition-delay: 1.3s;
+    }
+    .img3{
+        width: 100%;
+        right: 10%;
+        top: 60%;
+        transition-delay: 2s;
+    }
+    .service .layer{
+        width: 100%;
+        padding: 0;
+    }
+    .services-container{
+        width: auto;
+        height: 100%;
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    .service-box{
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+        height: 450px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+    .boxes-layout{
+        width: 100%;
+        overflow: hidden;
+    }
+    .service-description{
+        min-height: 210px;
+    }
+    .service-price{
+        width: 100%;
+        max-height: 80px;
+        padding: 10px;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    .icon-container img{
+        width: 20%;
+    }
+
+    #financial .icon-container img , #businessman .icon-container img{
+        width: 10%;
+    }
+
+    .team-container{
+        justify-content: flex-start;
+        width: auto;
+        overflow-x: scroll;
+    }
+    .team .layer{
+        padding: 20px 0 0 0;
+    }
+    .team .boxes-layout{
+        padding-top: 10%;
+    }
+    .members-box{
+        min-width: 250px;
+        height: auto;
+        background-color: rgba(36, 66, 45, .9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .contact-container{
+        padding: 10px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .contact .layer{
+        padding: 0;
+    }
+    .contact-form {
+        width: 100%;
+        gap: 10px;
+        font-size: .7rem;
+    }
+    
+    .contact-form form{
+        padding: 70px 20px;
+        gap: 10px;
+    }
+
+    .others-contact{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .home .layer h1{
+        color: var(--baby-powder);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .img-container img{
+        width: 200%;
+    }
+
+    .home .img-container img{
+        margin-top: -50%;    
+    }
+
+    .about .img-container img{
+        width: 250%;
+        margin-left: -120%;
+    }
+
+    .service .img-container img{
+        margin-top: -50%;
+    }
+    .text-container{
+        min-width: 100%;
+    }
+    .about .layer{
+        padding: 0;
+    }
+    .text-box{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        line-height: 1.5;
+        font-size: .75em;
+    }
+    .img-box{
+        display: none;
+    }
+    .services-container{
+        justify-content: flex-start;
+        height: auto;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: 10px;        
+    }
+
+    .service-box{
+        display: flex;
+        flex-direction: column;
+        min-width: 90%;
+        height: 500px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+    .service .layer{
+        width: 100%;
+        padding: 0;
+    }
+    .boxes-layout{
+        width: 100%;
+        padding: 20% 10px 0 10px;
+        overflow: hidden;
+    }
+    .service-description{
+        min-height: 210px;
+    }
+    .service-price{
+        width: 100%;
+        max-height: 80px;
+        padding: 10px;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    .icon-container img{
+        width: 20%;
+    }
+
+    #financial .icon-container img , #businessman .icon-container img{
+        width: 10%;
+    }
+
+    .team-container{
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .team .layer{
+        padding: 20px 0 0 0;
+    }
+    .team .boxes-layout{
+        padding-top: 10%;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .contact .layer{
+        padding: 0;
+    }
+    .contact-form {
+        width: 100%;
+        gap: 10px;
+        font-size: .7rem;
+    }
+    
+    .contact-form form{
+        padding: 70px 20px;
+        gap: 10px;
+    }
+
+    .others-contact{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+
+    .about .img-container img{
+        width: 350%;
+        margin-left: -120%;
+    }
+    .about{
+        font-size: 1.4em;
+    }
+
+}
+@media screen and (max-width:280px){
+
+    .about{
+        font-size: .8em;
+    }
+
+}
