@@ -533,14 +533,18 @@ h1{
 .others-contact{
     display: flex;
     width: 50%;
-    height: 100%;
+    min-height: 100%;
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 30px;
+    border: 1px solid;
 }
-
+.others-contact p> span{
+    margin-left: 10px;
+}
 .contact{
     position: relative;
 }
