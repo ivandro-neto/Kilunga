@@ -44,7 +44,7 @@ nav{
 }
 .nav{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 0 50px;
     flex-direction: row;
     list-style: none;
@@ -55,6 +55,7 @@ nav{
 li a{
     text-decoration: none;
     color: var(--baby-powder);
+    padding: 10px;
 }
 
 .container{
@@ -385,7 +386,8 @@ h1{
     width: 100%;
 }
 .members-img #ivandro{
-    width: 150%;
+    width: 500%;
+    margin-bottom: 10px;
 }
 .members-img #jorge{
     margin-top: 130px;
@@ -572,11 +574,16 @@ h1{
         pointer-events: none;
         transition: opacity 500ms;
     }
+
+    .btn{
+        font-size: .8em;
+        padding: 15px 20px;
+    }
     .nav{
         flex-direction: column;
         align-items: flex-end;
         gap: 40px;
-        font-size: 1.4em;
+        font-size: 1em;
         justify-content: center;
     }
     .home .layer h1{
@@ -855,7 +862,7 @@ h1{
         margin-left: -120%;
     }
     .about{
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
 }

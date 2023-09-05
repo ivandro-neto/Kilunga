@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/   # Exclui a pasta admin do index
+Disallow: /private/ # Exclui a pasta private do index
